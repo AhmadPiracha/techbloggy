@@ -8,7 +8,6 @@ const getLocalStorageTheme = () => {
         const value = localStorage.getItem('theme');
         return value || 'light';
     }
-    return 'light';
 }
 
 export const ThemeContextProvider = ({ children }) => {

@@ -36,6 +36,14 @@ body {
     --soft-text-color: #6a6a6a;
 }
 
+
+/* .light {
+    --bg: #0f172a;
+    --text-color: #ddd;
+    --soft-bg: #1f273a;
+    --soft-text-color: #6a6a6a;
+} */
+
 a {
     color: inherit;
     text-decoration: none;

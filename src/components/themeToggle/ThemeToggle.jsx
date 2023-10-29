@@ -9,18 +9,22 @@ import { SunIcon } from "../../../public/svg/SunIcon";
 const ThemeToggle = () => {
 
   const { theme, toggleTheme } = useContext(ThemeContext);
-  console.log(theme, toggleTheme)
+  // console.log(theme, toggleTheme)
   return (
-    <>
-      <Switch
-        defaultSelected
-        size="lg"
-        color="success"
-        startContent={<SunIcon />}
-        endContent={<MoonIcon />}
-        onClick={toggleTheme}
-      />
-    </>
+    <Switch
+    defaultSelected
+    style={{ margin: "0 10px"
+    }}
+    size="lg"
+    thumbIcon={({ isSelected, className }) =>
+      isSelected ? (
+        <SunIcon className={className} />
+      ) : (
+        <MoonIcon className={className} />
+      )
+    }
+    onClick={toggleTheme}
+  />
 
   )
 }
