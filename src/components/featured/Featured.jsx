@@ -9,11 +9,11 @@ const Featured = () => {
       </h1>
       <div className={styles.post}>
         <div className={styles.imageContainer}>
-          <Image className={styles.image} src="/images/p1.jpeg" alt='image' fill />
+          <Image className={styles.image} src="/images/homePage.jpg" alt='image' fill />
         </div>
         <div className={styles.textContainer}>
-          <h1 className={styles.postHead}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </h1>
-          <p className={styles.postDescription}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis eum consequuntur, perferendis totam dolores, sequi velit nobis distinctio ex mollitia laboriosam assumenda voluptatem explicabo, autem necessitatibus eius et earum nisi.</p>
+          <h1 className={styles.postHead}>TechBloggy: Exploring the Boundaries of Innovation</h1>
+          <p className={styles.postDescription}>Welcome to TechBloggy, where we unravel the latest in technology, from cutting-edge gadgets to groundbreaking developments. Join us on a journey to explore the limitless possibilities of innovation and stay ahead in the fast-paced world of tech.</p>
           <button className={styles.button}>
             Read More
           </button>

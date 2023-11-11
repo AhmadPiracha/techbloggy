@@ -10,16 +10,16 @@
 
 .post {
     margin-bottom: 60px;
-    /* display: flex; */
-    /* flex-direction: row; */
+    display: flex;
+    flex-direction: row;
     align-items: center;
     gap: 50px;
 }
 
 .imageContainer {
     flex: 1;
-    height: 300px;
-    width: 400px;
+    height: 400px;
+    width: 100%;
     position: relative;
 }
 
@@ -27,7 +27,7 @@
     object-fit: cover;
 }
 
-.text-container {
+.textContainer {
     flex: 1;
     gap: 20px;
 }
@@ -50,4 +50,51 @@
     border: none;
     border-radius: 5px;
     width: max-content;
+}
+
+
+/* Media query for small devices (phones, 480px and below) */
+
+@media (max-width: 480px) {
+    .post {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .imageContainer {
+        height: 200px;
+        width: 100%;
+    }
+    .postHeader {
+        font-size: 30px;
+    }
+    .postText {
+        font-size: 16px;
+    }
+}
+
+
+/* Media query for medium devices (tablets, 768px and below) */
+
+@media (max-width: 768px) {
+    .post {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .imageContainer {
+        height: 300px;
+        width: 100%;
+    }
+    .postHeader {
+        font-size: 30px;
+    }
+    .postText {
+        font-size: 16px;
+    }
+}
+
+
+/* Media query for large devices (laptops and desktops, 1024px and below) */
+
+@media (max-width: 1024px) {
+    /* Add your specific styles for large devices here */
 }
